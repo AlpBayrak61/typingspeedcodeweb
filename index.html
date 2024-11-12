@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Code Typing Speed Test</h1>
+        <div id="codeSnippet" class="code-snippet">
+            <!-- Highlighted code snippet will display here -->
+        </div>
+        <textarea id="typingArea" placeholder="Type here..." autofocus></textarea>
+        <div class="stats">
+            <p id="wpm">WPM: 0</p>
+            <p id="accuracy">Accuracy: 100%</p>
+            <p id="time">Time: 60s</p>
+        </div>
+        <button onclick="startTest()">Start Test</button>
+        <div id="results" class="results"></div> <!-- Results display -->
+        
+        <!-- Dropdown for previous tries -->
+        <div class="dropdown">
+            <button class="dropdown-button">Previous Attempts</button>
+            <div class="dropdown-content" id="previousAttempts">
+                <!-- Previous attempts will appear here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
